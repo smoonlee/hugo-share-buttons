@@ -2,11 +2,13 @@
 hugo-share-buttons is a [partial template](https://gohugo.io/templates/partials/) that allows you to show social share buttons on your Hugo website without any JavaScript or http requests.
 It is based on sharingbuttons.io and can look something like this:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-all.png" height="60">
+
+![image](https://github.com/user-attachments/assets/091db488-0cca-40b3-849e-bf3108d98b60)
 
 or like this:
 <br>
-<img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-medium.png" height="60">
+
+![image](https://github.com/user-attachments/assets/0b7b618c-771e-4000-a136-2821ca78d86d)
 
 
 ## How To Use
@@ -29,7 +31,7 @@ As a jumping-off point you can use these:
 <tbody>
 <tr>
 <td>
-    
+
 ```
 shareButtons:
   size: small
@@ -40,7 +42,7 @@ shareButtons:
 
 </td>
 <td>
-    
+
 ```
 [params.shareButtons]
   size = "small"
@@ -49,7 +51,7 @@ shareButtons:
 
 </td>
 <td>
-    
+
 ```
   "shareButtons" : {
     "networks" : [
@@ -73,13 +75,30 @@ Instead of copying the .html file, you can also use a [submodule](https://devcon
 ## Settings
 
 ### - networks (required)
-'networks' supported: facebook, twitter, tumblr, email, pinterest, linkedin, reddit, xing, whatsapp, hackernews, vk, telegram
+
+"facebook" \
+"twitter" \
+"bluesky" \
+"mastodon" \
+"tumblr" \
+"email" \
+"pinterest" \
+"linkedin" \
+"reddit" \
+"xing" \
+"whatsapp" \
+"hackernews" \
+"vk" \
+"telegram"
+
 
 ### - size (required)
 'size' can be one of
 - small
 - medium
 - large
+<br>
+
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-sizes.png" height="70">
 
 ### - icon (optional)
@@ -92,7 +111,7 @@ You can specify 'icon' as one of the following:
 <img src="https://letsmakeagame.net/github/hugo-share-buttons/hugo-share-buttons-icon-options.png" height="70">
 
 ### - buttonMargin (optional)
-You can specify margins to change the spacing between buttons. 
+You can specify margins to change the spacing between buttons.
 Default is 0.5em.
 
 ### - fontsize (optional)
@@ -110,7 +129,7 @@ Let's do a bigger example of how 'shareButtons' would look in your config file a
 <tbody>
 <tr>
 <td>
-    
+
 ```
 baseURL: 'https://yoursite.example.com/'
 params:
@@ -128,7 +147,7 @@ params:
 
 </td>
 <td>
-    
+
 ```
 baseURL = "https://yoursite.example.com/"
 
@@ -144,7 +163,7 @@ author = "Nikola Tesla"
 
 </td>
 <td>
-    
+
 ```
 {
    "baseURL" : "https://yoursite.example.com/",
@@ -163,7 +182,6 @@ author = "Nikola Tesla"
       }
    }
 }
-
 ```
 
 </td>
@@ -176,10 +194,10 @@ And this would be the result:
 
 ## disableShare
 You may need to disable share buttons on certain pages, for example, on your privacy policy page.
-To do this you can add 
+To do this you can add
 ```disableShare: true```
 to the [frontmatter](https://gohugo.io/content-management/front-matter/) of this page.
 
 ---
-You can find [more examples and details on making your own social share buttons in the blog post](https://letsmakeagame.net/social-media-share-buttons-for-a-hugo-website/). 
+You can find [more examples and details on making your own social share buttons in the blog post](https://letsmakeagame.net/social-media-share-buttons-for-a-hugo-website/).
 Also, please check out my [Hugo-related blog posts](https://letsmakeagame.net/tag/hugo/) or [useful Hugo shortcodes](https://github.com/Stals/lmg-hugo).
